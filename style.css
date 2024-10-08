@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    background-image: url(bg.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h4, h3, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.a-ellips {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* Selections Styling */
+.selections {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.event-desc {
+    margin-bottom: 15px;
+}
+.event-desc img {
+    max-width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.event-desc h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.event-desc p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+
+/* Map Styling */
+.map {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Form Controls */
+input[type="text"], input[type="number"], button {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Event List */
+#eventList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#eventList li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#layerList dd {
+    margin-left: 0;
+}
+
+#layerList a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#layerList a:hover {
+    text-decoration: underline;
+}
+.btn-search {
+    background-color: #991E14;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4, .col-md-8 {
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
